@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    
+    <v-main></v-main>   
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import BaseLayout from '../components/BaseLayout.vue'
+import VMain from '../components/VMain.vue'
 
 export default {
   name: 'home',
   components: {
-    BaseLayout
+    VMain
   }
 }
 </script>
