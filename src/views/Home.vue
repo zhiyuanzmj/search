@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-    <v-main></v-main>   
+  <div class="container">
+    <card></card>   
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import VMain from '../components/VMain.vue'
+import Card from '@/components/Card.vue'
 
 export default {
   name: 'home',
   components: {
-    VMain
+    Card
   }
 }
 </script>
