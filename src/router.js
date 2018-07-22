@@ -10,17 +10,17 @@ export default new Router({
   mode:'history',
   routes: [
     {
-      path: './',
+      path: 'search/',
       name: 'home',
       component: Home
     },
     {
-      path:'./zmj',
+      path:'search/zmj',
       name:'zmj'
       ,component:Zmj
     },
     {
-      path: './about/:id',
+      path: 'search/about/:id',
       name: 'about',
       component: About
       ,props:{zmj:'zhiyuanzmj',id:'adad'}
