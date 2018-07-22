@@ -1,5 +1,5 @@
 <template>
-    <div class="card flex-row box-shadow" style="width:auto">
+    <div class="card flex-row box-shadow mb-3" style="border">
         <img class="card-img-top ml-1" style="width:100px;height:100px" :src="img">
         <div class="card-body">
             <h5 class="card-title">{{title}}</h5>
@@ -34,6 +34,13 @@ export default {
         img1(){
             return this.$store.state.count
         }
+    },
+    watch:{
+        img_type:function(){
+            import(`@/assets/${this.img_type}.svg`).then(result=>{
+              this.img=result.default
+            })
+        }
     }
     ,created:function(){
         import(`@/assets/${this.img_type}.svg`).then(result=>{
@@ -44,5 +51,7 @@ export default {
 </script>
 
 <style>
-
+    .box-shadow{
+        box-shadow: 0 0 1rem rgba(0,0,0,.2)
+    }
 </style>
