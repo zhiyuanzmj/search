@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/assets/default.svg"],"names":["module","exports","__webpack_require__","p"],"mappings":"sFAAAA,EAAAC,QAAAC,EAAAC,EAAA","file":"js/3.74e9131f.js","sourcesContent":["module.exports = __webpack_public_path__ + \"img/default.6b692821.svg\";"],"sourceRoot":""}
