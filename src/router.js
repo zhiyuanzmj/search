@@ -10,12 +10,12 @@ export default new Router({
   mode:'history',
   routes: [
     {
-      path: 'search/',
+      path: '',
       name: 'home',
       component: Home
     },
     {
-      path:'search/zmj',
+      path:'/search/zmj',
       name:'zmj'
       ,component:Zmj
     },
