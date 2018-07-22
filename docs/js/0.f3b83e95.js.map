@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/assets/youku.svg"],"names":["module","exports","__webpack_require__","p"],"mappings":"oFAAAA,EAAAC,QAAAC,EAAAC,EAAA","file":"js/0.f3b83e95.js","sourcesContent":["module.exports = __webpack_public_path__ + \"img/youku.52815075.svg\";"],"sourceRoot":""}

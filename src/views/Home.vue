@@ -13,8 +13,12 @@ export default {
   data:function(){
     return {
       search_result:[
-        {img_type:'bilibili',title:'比哔哩哔哩弹幕网',text:'一个没有广告的网站'},
-        {img_type:'aiqiyi',title:'爱奇艺垃圾',text:'垃圾广告网站'},
+        {img_type:'bilibili',title:'比哔哩哔哩弹幕网',text:'一个没有广告的网站',count:[
+          {value:"1",href:"#"},{value:"2",href:"#"}
+        ]},
+        {img_type:'aiqiyi',title:'爱奇艺垃圾',text:'你可能是正版网站的受害者',count:[
+          {value:"1",href:"#"},{value:"2",href:"#"},{value:"3",href:"#"}
+        ]},
       ]
     }
   },

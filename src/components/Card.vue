@@ -1,9 +1,11 @@
 <template>
     <div class="card flex-row box-shadow mb-3" style="border">
-        <img class="card-img-top ml-1" style="width:100px;height:100px" :src="img">
+        <img class="card-img-top m-1" :style="img_style" :src="img">
         <div class="card-body">
             <h5 class="card-title">{{title}}</h5>
-            <p class="card-text">{{text}}</p>
+            <div class='btn-group card-text'>
+                <a class="btn btn-outline-light" v-for="c in count" style="color:black" href="#" :key="c.value">{{c.value}}</a>
+            </div>
         </div>
     </div>
 </template>
@@ -23,11 +25,17 @@ export default {
         text:{
             type:String,
             default:'这个逼很懒啥都没写'
-        }
+        },
+        count:Array
     },
     data:function(){
         return{
-            img:'',
+            img:'s',
+            img_height:'100px',
+            img_style:{
+                width:'auto',
+                height:'6.25rem'
+            }
         }
     }
     ,computed:{
@@ -42,7 +50,8 @@ export default {
             })
         }
     }
-    ,created:function(){
+    ,mounted:function(){
+        this.img_style.height=this.$el.clientHeight+'px'
         import(`@/assets/${this.img_type}.svg`).then(result=>{
           this.img=result.default
         })

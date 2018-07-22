@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/assets/search.svg"],"names":["module","exports","__webpack_require__","p"],"mappings":"oFAAAA,EAAAC,QAAAC,EAAAC,EAAA","file":"js/2.37b5eb18.js","sourcesContent":["module.exports = __webpack_public_path__ + \"img/search.1f3e5862.svg\";"],"sourceRoot":""}
