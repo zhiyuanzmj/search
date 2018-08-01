@@ -69,7 +69,7 @@ export default {
     }
     ,methods:{
         j:function(){
-            console.log(this.$refs.m.$el.children[0].focus())
+            window.console.log(this.$refs.m.$el.children[0].focus())
         }
     }
 }
